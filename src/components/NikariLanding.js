@@ -79,7 +79,7 @@ function NikariLanding() {
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
         >
-          Enter the Gallery
+          Entrar na Galeria
         </motion.button>
 
         {/* Footer text */}
@@ -87,7 +87,7 @@ function NikariLanding() {
           className="text-gray-600 text-xs sm:text-sm mt-8 tracking-widest uppercase"
           variants={itemVariants}
         >
-          Enter the Gallery
+          Entrar na Galeria
         </motion.p>
       </motion.div>
     </div>

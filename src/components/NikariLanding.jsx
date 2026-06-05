@@ -1,10 +1,7 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 import LaserLine from './LaserLine';
 
 export default function NikariLanding() {
-  const navigate = useNavigate();
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -42,7 +39,7 @@ export default function NikariLanding() {
   };
 
   const handleGalleryClick = () => {
-    navigate('/gallery');
+    alert('Navigate to gallery');
   };
 
   return (

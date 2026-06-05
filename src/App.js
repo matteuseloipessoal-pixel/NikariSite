@@ -1,5 +1,7 @@
 import NikariLanding from './components/NikariLanding';
 
-export default function App() {
+function App() {
   return <NikariLanding />;
 }
+
+export default App;

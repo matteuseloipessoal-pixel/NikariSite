@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function LaserLine() {
+function LaserLine() {
   return (
     <div className="flex justify-center relative h-12">
       {/* Main laser line with gradient */}
@@ -34,3 +34,5 @@ export default function LaserLine() {
     </div>
   );
 }
+
+export default LaserLine;

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import LaserLine from './LaserLine';
 
-export default function NikariLanding() {
+function NikariLanding() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -93,3 +93,5 @@ export default function NikariLanding() {
     </div>
   );
 }
+
+export default NikariLanding;

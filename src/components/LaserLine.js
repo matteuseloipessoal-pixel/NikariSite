@@ -2,30 +2,30 @@ import { motion } from 'framer-motion';
 
 function LaserLine() {
   return (
-    <div className="flex justify-center relative h-12">
-      {/* Main laser line with gradient */}
-      <div className="relative w-64 sm:w-80 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent rounded-full shadow-lg shadow-orange-400/50">
-        {/* Traveling light effect */}
+    <div className="flex justify-center relative h-8">
+      {/* Static laser line - thin and precise */}
+      <div className="relative w-48 sm:w-56 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent shadow-md shadow-orange-400/60">
+        {/* Traveling bright point - the "light" that travels along the laser */}
         <motion.div
-          className="absolute inset-0 h-full bg-gradient-to-r from-transparent via-yellow-300 to-transparent rounded-full blur-sm"
+          className="absolute top-1/2 -translate-y-1/2 w-12 h-1 bg-gradient-to-r from-transparent via-yellow-300 to-transparent blur-sm"
           animate={{
-            x: ['-100%', '100%'],
+            left: ['-50%', '100%'],
           }}
           transition={{
-            duration: 3,
+            duration: 2.5,
             repeat: Infinity,
             ease: 'linear',
           }}
         />
 
-        {/* Brighter center glow */}
+        {/* Extra glow for the bright center */}
         <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-yellow-200 to-transparent blur-md opacity-80"
+          className="absolute top-1/2 -translate-y-1/2 w-6 h-px bg-yellow-200 blur-sm opacity-70"
           animate={{
-            x: ['-100%', '100%'],
+            left: ['-25%', '105%'],
           }}
           transition={{
-            duration: 3,
+            duration: 2.5,
             repeat: Infinity,
             ease: 'linear',
           }}

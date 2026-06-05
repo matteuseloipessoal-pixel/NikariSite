@@ -52,7 +52,7 @@ function NikariLanding() {
       >
         {/* Title */}
         <motion.h1
-          className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-4 tracking-wider bg-gradient-to-r from-orange-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
+          className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-4 tracking-wider uppercase bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-400 bg-clip-text text-transparent"
           variants={titleVariants}
         >
           NIKARI
